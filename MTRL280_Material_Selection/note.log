@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.7)  21 MAR 2019 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.7)  14 APR 2019 11:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -517,7 +517,7 @@ File: figures/trade_off_graph.PNG Graphic file (type png)
 <use figures/trade_off_graph.PNG>
 Package pdftex.def Info: figures/trade_off_graph.PNG  used on input line 287.
 (pdftex.def)             Requested size: 284.52756pt x 269.01111pt.
- [8 <c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/figures/trade_off_graph.png>] [9] (c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.aux)
+ [8 <c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/figures/trade_off_graph.png>] [9] [10] (c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -531,10 +531,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,9n,63p,326b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.pdf (9 pages, 213818 bytes).
+Output written on c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.pdf (10 pages, 217999 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

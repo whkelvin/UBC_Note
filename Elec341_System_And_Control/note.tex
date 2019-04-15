@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{sectsty}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+
+%\setlength{\parskip}{1em}
+
+\definecolor{color:background}{RGB}{40,40,40}
+\definecolor{color:text}{RGB}{230,230,230}
+
+\pagecolor{color:background}
+\color{color:text}
+\allsectionsfont{\normalfont\sffamily\bfseries}
+
+\title{Elec341 System And Control}
+\author{Kelvin Hsu}
+
+
+\begin{document}
+    \sffamily
+       \maketitle
+       \newpage
+
+    \section*{The Stability of Linear Feedback System}
+    \subsection*{Types of Stability}
+    \begin{itemize}
+        \item Absolute Stability: A closed loop feedback system that is either stable or not stable.
+        \item Relative Stability: Given a closed loop system is stable, we can further 
+                                  specify the degree of stability.
+    \end{itemize}
+
+    \subsection*{Absolute Stability}
+    Absolute Stability of a system can be found by determining that all the poles for the transfer function lie in the left-half 
+    s-plane, or equivalently, that all the eigenvalues of the system matrix A lie in the left-half s-plane.
+
+    \subsection*{Relative Stability}
+    Relative Stability can be determine by examining the relative locations of all the poles or eigenvalues.
+
+    \subsection*{Stable System}
+    A stable system is a dynamic system with a bounded response to a bounded input.
+    A linear system is stable if and only if the absolute value of its impulse response integrated over 
+    an infinite range, is infinite.\par
+    Let g(t) be the impulse response of the system.
+    \begin{equation*}
+        \int_{0}^{\inf} |g(t)| dt = \inf
+    \end{equation*}
+
+    Locations of the poles determine whether the system would have an increasing, neutral, or decreasing response for a disturbance input.
+    \begin{itemize}
+        \item Poles in left-hand portion of s-plane $\rightarrow$ decreasing response
+        \item Poles on $j\omega$ axis $\rightarrow$ neutral response
+        \item Poles in right-hand portion of s-plane $\rightarrow$ increasing response
+    \end{itemize}
+
+    For a feedback system to be stable, all the poles need to have negative real parts.
+
+    For a feedback system with poles on the $j\omega$ axis and left-hand s-plane, the response of the 
+    system would be oscillations for a bounded input, unless the input is a sinusoid whose frequency is equal to the 
+    magnitude of the $j\omega$ roots. Such a system is called marginally stable since only 
+    certain bounded input would cause the system to be unstable.
+
+    For a feedback system with any poles in the right-hand portion, the system would have unbounded output response.
+
+    \subsection*{Methods to Determine Stability of a System}
+    \begin{itemize}
+        \item The s-plane approach
+        \item The frequency plane approach
+        \item The time domain approach
+    \end{itemize}
+
+    \subsection*{Routh-Hurwitz Criterion}
+    A criterion to determine the stability of linear systems.\par
+    The characteristic equation can be written in the form,
+    \begin{equation*}
+        a_{n}s^{n} + a_{n-1}s^{n-1}....+a_{0} = 0
+    \end{equation*}
+    The coefficients of the characteristic equations are put into an array of the form,
+    \begin{center}
+        \begin{tabular}{c| c c c}
+            $s^{n}$&$a_{n}$&$a_{n-2}$&$a_{n-4}\, ...$\\
+            $s^{n-1}$&$a_{n-1}$&$a_{n-3}$&$a_{n-5}\, ...$\\
+            $s^{n-2}$&$b_{n-1}$&$b_{n-3}$&$b_{n-5}\, ...$\\
+            $s^{n-3}$&$c_{n-1}$&$a_{n-3}$&$a_{n-5}\, ...$\\
+            .&.&.&.\\
+            .&.&.&.\\
+            .&.&.&.\\
+            $s^{0}$&$h_{n-1}$&&
+        \end{tabular}
+    \end{center}
+    where,
+    \begin{equation*}
+        b_{n-1} = \frac{a_{n-1}a_{n-2} - a_{n}a_{n-3}}{a_{n-1}} = \frac{-1}{a_{n-1}}
+            \begin{vmatrix}
+                a_{n} & a_{n-2}\\
+                a_{n-1} & a_{n-3}
+            \end{vmatrix}
+    \end{equation*}
+
+    \begin{equation*}
+        b_{n-3} = \frac{-1}{a_{n-1}}\begin{vmatrix}a_{n}&a_{n-4}\\a_{n-1}&a_{n-5} \end{vmatrix}
+     \end{equation*}
+    \begin{equation*}
+        c_{n-1} = \frac{-1}{b_{n-1}}\begin{vmatrix}a_{n-1}&a_{n-3}\\b_{n-1}&b_{n-3} \end{vmatrix}
+    \end{equation*}
+
+    The Routh-Hurwitz criterion states that the number of roots of the characteristic equation q(s) with 
+    positive real parts is equal to the number of changes in sign of the first column of the Routh array.
+
+    There are 4 other conditions that need to be considered.
+    \begin{enumerate}
+        \item No element in the first column is zero
+        \item There is a zero in the first column, but some other elements of the row containing the zero in the 
+              first column are nonzero.
+        \item There is a zero in the first column, and the other elements of the row containing the zero are also zero
+        \item Repeated roots of the characteristic equation on the $j\omega$ axis
+    \end{enumerate}
+
+    TODO!!!
+    
+    \section*{PID Control}
+
+
+
+
+\begin{equation*}
+    \int_{\text{Beginning of semester}}^{\text{End of semester}} \text{Nathan's Effort} + \text{Dario's Effort} \,\, dt = 0
+\end{equation*}
+
+
+\end{document}

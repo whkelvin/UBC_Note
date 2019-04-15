@@ -320,6 +320,72 @@
         \subsection*{Exchange Constant}
         Obtaining the exchange function is difficult. It can be found based on engineering criterial or 
         market research, or political or socio-economic policy. The exchange function does not have to be a constant.
+
+        \section*{Process Selection}
+        \begin{itemize}
+           \item Function: What must the process do?
+           \item Constraints: What technical limits must be met?
+           \item Objective: What is to be maximized or minimized?
+           \item Free Variable: Choice of process and process-operating conditions. 
+        \end{itemize}
+
+        \subsection*{Screening}
+        \subsubsection*{Important Processing Attribute}
+        \begin{itemize}
+            \item Material Compatibility: what process can be used for that specific material?
+            \item Size and Shape
+            \item Tolerance and surface roughness
+        \end{itemize}
+        Chart can be used to perform screening on processes.
+        
+        \subsection*{Ranking Potential Processes}
+        How to keep the cost down?
+        \begin{enumerate}
+            \item Keep it standard(buy, don't make) 
+            \item Keep it simple
+            \item Do not over specify
+        \end{enumerate}
+
+        \subsection*{Process Cost Model}
+        Process is the sum of the costs of the resources it consumes
+
+        \begin{equation*}
+            C = [mC_{m}] + \frac{C_{t}}{n} + \frac{\dot{C_{L}}}{\dot{n}}
+        \end{equation*}
+
+        \begin{equation*}
+            \frac{\text{Cost}}{\text{Component}} = \frac{\text{Material + tooling + overhead + power + space + $\dots$ }}{\text{Component}}
+        \end{equation*}
+        *Normalized to cost per part.
+
+        \begin{itemize}
+            \item material cost (constant)
+            \item tooling cost (depends on batch size)
+            \item overhead cost (operating cost, power, water...)(constant)
+        \end{itemize}
+
+       \section*{Material Selection and Environment} 
+       \subsection*{Life Cycle Analysis}
+       \begin{itemize}
+           \item Material Production
+           \item Product manufacturing
+           \item Product used
+           \item Product Disposal
+       \end{itemize}
+
+       \subsection*{Eco-Attributes of a Material}
+       Embodied Energy: the fossil-fuel energy consumed in making 1 kg of  material.
+       CO2 Footprint: the amount of CO2 produced in the production of 1 kg of material.
+
+       \begin{equation*}
+            E = m * H_{p} = AL \rho H_{p}
+       \end{equation*}
+       where $H_{p}$ is the embodied energy(j/kg)
+
+
+
+
+
         
         
 

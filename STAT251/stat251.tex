@@ -76,7 +76,7 @@
 
     Suppose we draw a random sample of size n, $X_{1}, X_{2}...X_{n}$ from a population random variable that is distributed
     with mean $\mu$ and standard deviation $\sigma$. Do this repeatedly and then calculate the mean of each sample. As the sample size
-    increases, the distribution of the mean of the drawn samples will approach a normal distribution with mean $\mu$ and standard deviation $\frac{\mu}{\sqrt{n}}$.
+    increases, the distribution of the mean of the drawn samples will approach a normal distribution with mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
 
 
     \begin{equation*}
@@ -634,17 +634,17 @@
             \item Left-Tailed
                 \begin{align*}
                     H_{o}: \mu_{1} -  \mu_{2} \geq \Delta_o\\
-                    H_{a}: mu_{1} -  \mu_{2} < \Delta_o
+                    H_{a}: \mu_{1} -  \mu_{2} < \Delta_o
                 \end{align*}
             \item Right-Tailed
                 \begin{align*}
                     H_{o}: \mu_{1} -  \mu_{2} \leq \Delta_o\\
-                    H_{a}: mu_{1} -  \mu_{2} > \Delta_o
+                    H_{a}: \mu_{1} -  \mu_{2} > \Delta_o
                 \end{align*}
             \item Two-Tailed
                 \begin{align*}
                     H_{o}: \mu_{1} -  \mu_{2} = \Delta_o\\
-                    H_{a}: mu_{1} -  \mu_{2} \neq \Delta_o
+                    H_{a}: \mu_{1} -  \mu_{2} \neq \Delta_o
                 \end{align*}
         \end{itemize}
 
@@ -773,15 +773,189 @@
             The calculated confidence interval does not contain the hypothesized value.
             Therefore we can reject the null hypothesis, $H_{o}$.
 
+            \section*{Comparison of Several Means}
+            \subsection*{Analysis of Variance ANOVA}
+            ANOVA is a statistical method that tests the equality of three or more population 
+            means by analyzing sample variances or variation in the data.\par
+            he simplest ANOVA problem is referred to variously as a single-factor, single-classification, 
+            or one-way ANOVA.
 
+            \subsection*{Example}
+            \begin{enumerate}
+                \item An experiment to study the effect of five different brands of gasoline 
+                        on automobile engine operating efficiency (mpg)
+                \item An experiment to study the effect of the presence of three 
+                        different sugar solutions on bacterial growth.
+            \end{enumerate}
 
+            \subsection*{One-Way ANOVA}
+            One-way ANOVA focuses on a comparison of 3 or more population or 
+            treatment means.\par
 
+            Let k be the number of populations or treatments being compared.
+            \begin{align*}
+                &\mu_{1} \text{ is the mean of population 1 or the true average response when 
+                treatment 1 is applied.}\\
+                &\text{.}\\
+                &\text{.}\\
+                &\text{.}\\
+                &\mu_{k} \text{ is the mean of population k or the true average 
+                response when treatment k is applied.}
+            \end{align*}
 
-       
+            \subsection*{Hypotheses}
+            \begin{align*}
+                H_{o}: \mu_{1} = \mu_{2} = ...= \mu_{k}\\
+                H_{a}: \text{at least two of the $\nu_{i}$ are different}
+            \end{align*}
+            Reject $H_{o}$ here means that at least two population means have 
+            different values.
 
-        
+            \subsection*{Assumptions for ANOVA}
+            For each population, the response variable is normally distributed.\par
+            The variance of the response variable, denoted $\sigma^{2}$, is the same for all the 
+            populations.\par
+            The observations must be independent.
+            
+            \subsection*{Notation}
+            k random samples observed.
+            $y_{ij}$ is the $j_{th}$ observed value from the $i^{th}$ population.
 
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=10cm]{figures/anova_table.PNG}
+                \label{fig:anova_table}
+            \end{figure}
+
+            where,
+            \begin{equation*}
+                \bar{y_{i}} = \frac{\sum_{j=1}^{ni} y_{ij}}{n_{i}} = \frac{y_{i0}}{n_{i}}
+            \end{equation*}
+
+            \begin{align*}
+                \text{Total Sample Size } = n = n_{1} + ...n_{k}\\
+                \text{Grand Total } = y_{oo} = \sum_{k}^{i = 1} \sum_{n_{i}}^{j=1}y_{ij}\\
+                \text{Grand Mean } = \bar{y_{oo}} = \frac{y_{oo}}{n} = \frac{\sum_{k}^{i = 1} \sum_{n_{i}}^{j=1}y_{ij}}{n} 
+            \end{align*}
+
+            Let $Y_{ij}$ be the random variable that denotes the $j^{th}$ measurement 
+            taken from the $i^{th}$ treatment.
+
+            Then $y_{ij}$ is the observed value of $Y_{ij}$.
+
+            \begin{align*}
+                E[\bar{y_{i}}] = \mu_{i}\\
+                Var(\bar{y_{i}}) = \frac{\sigma}{n_{i}}
+            \end{align*}
+
+            For k random samples, we can find calculate the sample variances.
+            \begin{equation*}
+                S_{1}^{2}, S_{2}^{2}...S_{k}^{2}
+            \end{equation*}
+
+            $S_{1}^{2}, S_{2}^{2}...S_{k}^{2}$ are k different 
+            unbiased estimates for the common variance $\sigma^{2}$.
+            \begin{equation*}
+                E[S_{i}^{2}] = \sigma^{2}
+            \end{equation*}
           
+            These k estimates can be combined to obtain an 
+            unbiased estimate for $\sigma^{2}$.
+            \begin{equation*}
+                s^{2} = \frac{\sum_{i=1}^{k} (n_{i}-1)S_{i}^{2}}{n-k} = MSE
+            \end{equation*}
+            where
+            \begin{equation*}
+                S_{i}^{2} = \frac{\sum_{i=1}^{n_{i}} (y_{ij} - \bar{y_{ij}})^{2}}{n_{i} - 1}
+            \end{equation*}
+
+            \subsection*{$H_{o}$ is true}
+            Sample means are close together because there is only one sampling distribution.
+
+            \subsection*{$H_{o}$ is false}
+            Sample means comes from different sampling distributions and are not close together.
+
+            \subsection{Total Variation In The Data (SSE - total sum of squares)}
+            Comes from 2 sources.
+            \begin{itemize}
+                \item Variation between groups/treatments. (SSTr- Treatment sum of squares)
+                \item Variation within groups/treatments.(SSE - Error sum of squares)
+            \end{itemize}
+
+            \begin{equation*}
+                SST = SSTr + SSE
+            \end{equation*}
+
+            \begin{align*}
+                &SST = \sum_{i=1}^{k}\sum_{j=1}^{n_{i}} (y_{ij}- \bar{y_{oo}})^{2} =  \sum_{i=1}^{k}\sum_{j=1}^{n_{i}}  y_{ij}^{2} - \frac{1}{n}y_{oo}^{2}\\
+                &SSTr = \sum_{i=1}^{k}\sum_{j=1}^{n_{i}} (\bar{y_{io} - \bar{y_{oo}}})^{2} =  \sum_{i=1}^{k} \frac{1}{n_{i}} y_{i}^{2} - \frac{1}{n} y_{oo}^{2}\\
+                &SSE =  \sum_{i=1}^{k}\sum_{j=1}^{n_{i}} (y_{ij} - \bar{y_{io}})^{2} =  \sum_{i=1}^{k}\sum_{j=1}^{n_{i}} y_{ij}^{2} - \sum_{i=1}^{k} \frac{y_{io}^{2}}{n_{i}} = \sum_{i=1}^{k} (n_{i} - 1)S_{i}^{2}
+            \end{align*}
+
+            \subsection*{Degrees of Freedom}
+            \begin{align*}
+                df(SST) = n-1\\
+                df(SSE) = n-k\\
+                df(SSTr) = k-1
+            \end{align*}
+
+            \subsection*{Mean Squares}
+            \begin{align*}
+                \text{Mean Square Treatment} = MSTr = \frac{SSTr}{k-1}\\
+                \text{Mean Square Error} = MSE = \frac{SSE}{n-k}
+            \end{align*}
+            *MSE is a measure of with-sample variation.
+
+            \subsection*{ANOVA Test Procedure}
+            \begin{align*}
+                &H_{o}: \mu_{1} = \mu_{2} = \dots = \mu_{k}\\
+                &H_{a}: \mu_{i} \neq \mu_{j} \text{ for } i\neq j
+            \end{align*}
+
+            \subsection*{Test Statistic}
+            \begin{equation*}
+                F_{obs} = \frac{MSTr}{MSE} \sim F_{\gamma_{1}, \gamma_{2}}
+            \end{equation*}
+
+            Under $H_{o}$, $F_{obs}$ follows the F-distribution with degrees of freedom,
+            \begin{align*}
+                \gamma_{1}(\text{numerator df}) = df(SSTr) = k-1\\
+                \gamma_{2}(\text{Denominator df} = df(SSE) = n-k
+            \end{align*}
+            \subsection*{F-distribution}
+            Reject $H_{o}$ if $F_{obs} \geq F_{\alpha}$.
+
+            \subsection*{The ANOVA TABLE}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=10cm]{figures/anova_table2.PNG}
+                \label{fig:anova_table2}
+            \end{figure}
+          
+            \subsection*{The ANOVA Model}
+            The assumptions of single-factor ANOVA can be described sufficiently 
+            by means of the "model equation". \par
+            Each measurement will be represented as the sum of 
+            two terms, as unknown constant, $\mu_{i}$, and a random variable, $\epsilon_{ij}$.
+
+            \begin{align*}
+                &Y_{ij} = \mu_{i} + \epsilon_{ij}\\
+                &i = 1, 2, \dots , k\\
+                &j = 1, 2, \dots ,n_{i}
+            \end{align*}
+            where $\epsilon_{ij}$ represents a random deviation from the population or true treatment 
+            mean $\mu_{i}$.
+
+            \subsection*{The model assumptions are:}
+            \begin{enumerate}
+                \item Independence: The random variables $\epsilon_{ij}$ are independent (implying that $X_{ij}$ are also).
+                \item Constant Treatment Means: $E(\epsilon_{ij}) = 0$ for all i and j
+                \item Constant Variance: $Var(\epsilon_{ij}) = \sigma^{2}$ for all i and j
+                \item Normality: The variables $\epsilon_{ij}$ are normal.
+            \end{enumerate}
+            
+
+
 \end{document}
 
  

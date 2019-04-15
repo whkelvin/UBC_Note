@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.7)  23 MAR 2019 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.7)  8 APR 2019 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -534,29 +534,58 @@ File: figures/brushed_motor.png Graphic file (type png)
 <use figures/brushed_motor.png>
 Package pdftex.def Info: figures/brushed_motor.png  used on input line 149.
 (pdftex.def)             Requested size: 142.26378pt x 101.28317pt.
-<figures/elec-mech-model.png, id=34, 205.26688pt x 154.07562pt>
+
+Overfull \hbox (36.0322pt too wide) in paragraph at lines 167--170
+\OT1/cmss/m/n/10 across the ends of the ar-ma-ture. At a speed of $\OML/cmm/m/it/10 ![]$\OT1/cmss/m/n/10 , the in-duced $\OML/cmm/m/it/10 emf\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 electromotiveforce\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 e[]$
+ []
+
+[5 <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/brushed_motor.png>]
+<figures/elec-mech-model.png, id=38, 205.26688pt x 154.07562pt>
 File: figures/elec-mech-model.png Graphic file (type png)
 <use figures/elec-mech-model.png>
-Package pdftex.def Info: figures/elec-mech-model.png  used on input line 179.
+Package pdftex.def Info: figures/elec-mech-model.png  used on input line 186.
 (pdftex.def)             Requested size: 142.26378pt x 106.78484pt.
- [5 <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/brushed_motor.png>] [6 <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/elec-mech-model.png>] (c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/Note.aux)
+<figures/4q_operation.png, id=39, 316.68312pt x 167.62625pt>
+File: figures/4q_operation.png Graphic file (type png)
+<use figures/4q_operation.png>
+Package pdftex.def Info: figures/4q_operation.png  used on input line 209.
+(pdftex.def)             Requested size: 284.52756pt x 150.61667pt.
+ [6 <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/elec-mech-model.png>]
+<figures/t_omega_characteristic_dc.png, id=44, 283.0575pt x 211.28937pt>
+File: figures/t_omega_characteristic_dc.png Graphic file (type png)
+<use figures/t_omega_characteristic_dc.png>
+Package pdftex.def Info: figures/t_omega_characteristic_dc.png  used on input line 228.
+(pdftex.def)             Requested size: 227.62204pt x 169.9151pt.
+ [7 <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/4q_operation.png> <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/t_omega_characteristic_dc.png>] [8]
+<figures/rotor_stator_circuit.png, id=55, 400.99812pt x 126.4725pt>
+File: figures/rotor_stator_circuit.png Graphic file (type png)
+<use figures/rotor_stator_circuit.png>
+Package pdftex.def Info: figures/rotor_stator_circuit.png  used on input line 323.
+(pdftex.def)             Requested size: 227.62204pt x 71.79288pt.
+ [9]
+<figures/rotor_stator_phasor.png, id=59, 170.13562pt x 113.42375pt>
+File: figures/rotor_stator_phasor.png Graphic file (type png)
+<use figures/rotor_stator_phasor.png>
+Package pdftex.def Info: figures/rotor_stator_phasor.png  used on input line 331.
+(pdftex.def)             Requested size: 227.62204pt x 151.75684pt.
+ [10 <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/rotor_stator_circuit.png> <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/figures/rotor_stator_phasor.png>] [11] (c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/Note.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 14687 strings out of 492616
- 290579 string characters out of 6132784
+ 14707 strings out of 492616
+ 291243 string characters out of 6132784
  320337 words of memory out of 5000000
- 18509 multiletter control sequences out of 15000+600000
+ 18525 multiletter control sequences out of 15000+600000
  541738 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,63p,348b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
-<d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/Note.pdf (6 pages, 348358 bytes).
+<d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/Note.pdf (11 pages, 453399 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
