@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1555265635 "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.tex" "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.pdf" "note" 1555265636
-  "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.aux" 1555265636 271 a1e828f66a7cd0d91b125766b50defe2 ""
-  "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.tex" 1555265634 17749 47d67d2a18c84142bf7d9e7c002e7c88 ""
+["pdflatex"] 1555334929 "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.tex" "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.pdf" "note" 1555334931
+  "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.aux" 1555334931 165 666f515029a45f69ed37c21d2518099c ""
+  "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.tex" 1555334921 17778 d2036279717ef30c8bb083dd6ef35761 ""
   "d:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1549528486 3332 103109f5612ad95229751940c61aada0 ""
   "d:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1549526826 1004 54797486969f23fa377b128694d548df ""
   "d:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1549526826 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -86,11 +86,11 @@
   "d:/texlive/2018/texmf.cnf" 1549532156 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   "figures/trade_off_graph.PNG" 1553225980 107165 05533d7b84fb4ec1a3225268598c53e0 ""
   "figures/trade_off_graph.png" 1553225980 107165 05533d7b84fb4ec1a3225268598c53e0 ""
-  "note.aux" 1555265636 271 a1e828f66a7cd0d91b125766b50defe2 ""
-  "note.tex" 1555265634 17749 47d67d2a18c84142bf7d9e7c002e7c88 ""
+  "note.aux" 1555334931 165 666f515029a45f69ed37c21d2518099c ""
+  "note.tex" 1555334921 17778 d2036279717ef30c8bb083dd6ef35761 ""
   (generated)
-  "note.pdf"
-  "note.aux"
-  "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.pdf"
   "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.log"
+  "c:/Users/whkel/Desktop/Note/MTRL280_Material_Selection/note.pdf"
+  "note.aux"
   "note.log"
+  "note.pdf"

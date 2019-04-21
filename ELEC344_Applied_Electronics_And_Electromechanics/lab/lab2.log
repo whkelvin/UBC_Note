@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.7)  10 APR 2019 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.7)  19 APR 2019 15:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -501,17 +501,17 @@ Package gensymb Warning: Not defining \micro.
 [1
 
 {d:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figures/rpm_torque.PNG, id=22, 690.07813pt x 315.1775pt>
+<figures/rpm_torque.PNG, id=22, 599.23875pt x 307.64937pt>
 File: figures/rpm_torque.PNG Graphic file (type png)
 <use figures/rpm_torque.PNG>
 Package pdftex.def Info: figures/rpm_torque.PNG  used on input line 92.
-(pdftex.def)             Requested size: 341.43704pt x 227.62495pt.
+(pdftex.def)             Requested size: 341.44162pt x 227.6241pt.
  [3]
-<figures/rpm_torque_zoom_in.PNG, id=28, 691.58376pt x 314.67563pt>
+<figures/rpm_torque_zoom_in.PNG, id=28, 599.23875pt x 307.1475pt>
 File: figures/rpm_torque_zoom_in.PNG Graphic file (type png)
 <use figures/rpm_torque_zoom_in.PNG>
 Package pdftex.def Info: figures/rpm_torque_zoom_in.PNG  used on input line 98.
-(pdftex.def)             Requested size: 341.43275pt x 227.6226pt.
+(pdftex.def)             Requested size: 341.44162pt x 227.62303pt.
  [4 <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/lab/figures/rpm_torque.png> <c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/lab/figures/rpm_torque_zoom_in.png>] (c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/lab/lab2.aux) ) 
 Here is how much of TeX's memory you used:
  14659 strings out of 492616
@@ -522,7 +522,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,13n,63p,352b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/lab/lab2.pdf (4 pages, 221629 bytes).
+Output written on c:/Users/whkel/Desktop/Note/ELEC344_Applied_Electronics_And_Electromechanics/lab/lab2.pdf (4 pages, 188147 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream

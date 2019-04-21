@@ -26,7 +26,559 @@
     \sffamily
        \maketitle
        \newpage
+    \section{Introduction to Statistic}
+    Statistic is a science involving the design of studies, data collection , summarizing 
+    data and analyzing data, interpreting results and drawing conclusions.
+    \section*{Key Statistics Concepts}
+    \begin{itemize}
+        \item Population: all subject of interest in a study
+        \item Sample: a subset of population
+        \item Parameter: a descriptive measure of a population
+        \item Statistic: a descriptive measure of a sample
+        \item Census: collecting data for the entire population
+        \item Sample Survey: collecting data for a sample
+    \end{itemize}
 
+    \section*{Classification of Variables}
+    \begin{itemize}
+        \item Categorical: gender, major, blood type...
+        \item Quantitative: can be discrete or continuous
+    \end{itemize}
+
+    \section*{Inferential VS Descriptive Statistic}
+    \begin{itemize}
+        \item Inferential Statistic: Methods for making decision or prediction about a population based on 
+        data collected on a sample.
+        \item Descriptive Statistic: Methods of summarizing data (graphs and numbers)
+    \end{itemize}
+
+    \section*{Types of Graphs}
+    For qualitative data, 
+    \begin{itemize}
+        \item Pie Chart
+        \item Bar Graph
+    \end{itemize}
+
+    For quantitative data, 
+    \begin{itemize}
+        \item Dot Plot
+        \item Stem and Leaf Plot
+        \item Histogram
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/pie_chart.PNG}
+        \caption{Pie Chart}
+        \label{fig:pie_chart}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/bar_graph.PNG}
+        \caption{Bar Graph}
+        \label{fig:bar_graph}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/dot_graph.PNG}
+        \caption{Dot Plot}
+        \label{fig:dot_graph}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/histogram.PNG}
+        \caption{Histogram}
+        \label{fig:Histogram}
+    \end{figure}
+   
+    \section*{Describing A Distribution}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/types_of_distribution.PNG}
+        \caption{Types Of Distribution}
+        \label{fig:types_of_distribution}
+    \end{figure}
+
+    \subsection*{Shape}
+    \begin{itemize}
+        \item Skewness: whether the distribution is symmetrical
+        \item Center: where do the observation cluster about?
+        \item Spread: Assess the spread of a distribution
+        \item Outlier: observations that fall far from the rest of the data
+        \item Mode: the most frequent observation
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/Skewness.PNG}
+        \caption{Skewness}
+        \label{fig:skewness}
+    \end{figure}
+
+    \section*{Measures of Center}
+    \subsection*{Mean}
+    Mean is the average of the observation.
+    \begin{equation*}
+        \bar{x} = \frac{\sum_{i = 1}^{n} x_{i}}{n}
+    \end{equation*}
+    where n is the number of observations.
+
+    \subsection*{Median}
+    Median is the midpoint of the observations.
+    If the number of sample n is\dots
+    \begin{align*}
+        &\text{odd:}\\ 
+        &\text{median is the midpoint} \frac{n+1}{2}\text{th point in an ordered list} \\
+        &\text{even:}\\  
+        &\text{median is the average of the 2 middle observations } (\frac{n}{2}th + \frac{n+1}{2}th) / 2
+    \end{align*}
+
+    \subsection*{Comparing Mean and Median}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/mean_and_median.PNG}
+        \caption{Mean And Median}
+        \label{fig:mean_and_median}
+    \end{figure}
+
+    \section*{Measure of Variability}
+    Measure of variation gives information on the spread or variability or dispersion of the data.
+    \subsection*{Range}
+        \begin{equation*} 
+            \text{Range} = X_{max} - X_{min}
+        \end{equation*}
+    
+    \subsection*{Variance and Standard Deviation}
+    \begin{align*}
+        &\text{Variance} = S^{2} = \frac{ \sum_{i = 1}^{n} (x_{i}- \bar{x})^{2}} {n-1}\\
+        &\text{Standard Deviation} = S = \sqrt{\frac{ \sum_{i = 1}^{n} (x_{i}- \bar{x})^{2}} {n-1}}\\
+    \end{align*}
+    Standard deviation measures the spread of data and it is zero only when all observations have the same value.
+    As spread increases, s increases. S is sensitive to outliers.
+
+    \section*{Interquartile Range}
+    \begin{equation*}
+        \text{IQR = Q3 - Q1}
+    \end{equation*}
+    \begin{itemize}
+        \item Q1: first quartile, 25th percentile, the value in the sample that has $25\%$ of data below it
+        \item Q2: median
+        \item Q3: third quartile, 75th percentile
+    \end{itemize}
+
+    \section*{Identifying Outliers}
+    If data is 1.5 IQR below Q1 or above Q3, then it is an outlier.
+
+    \section*{Percentile}
+    The n-th percentile is a value such that n percent of the observations fall below that value.
+
+    \section*{Sample Quantile}
+    Let $0<p<1$. The sample quantile or order p, Q(p) is a number with the property that approximately $p*100\%$ 
+    of the data are below it.
+
+    \begin{enumerate}
+        \item Sort data from smallest to largest
+        \item let m = $n*p + 0.5$
+    \end{enumerate}
+    if m is an integer:
+    \begin{equation*}
+        Q(p) = x_{m}
+    \end{equation*}
+    else:
+    \begin{equation*}
+        Q(p) = \frac{x_{m} + {x_{m+1}}}{2}
+    \end{equation*}
+    
+    \section*{Box Plot}
+    Box plot provides a way of looking at data to determine its central tendency, spread, skewness,
+    and the existence of outliers.
+    To construct a box plot,
+    \begin{itemize}
+        \item largest value within Q3 + IQR
+        \item smallest value within Q1 - IQR
+        \item Q1, Q2, and Q3
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figures/box_plot.PNG}
+        \caption{Box Plot}
+        \label{fig:box_plot}
+    \end{figure}
+
+    \section{Probability}
+    \section*{Sample Space}
+    Sample space is a set of all possible outcomes of a random experiment.
+
+    \section*{Event}
+    An event is a subset of a sample space
+
+    \section*{Probability of a sample space}
+    Each outcome has a possibility in a sample space. The probability for each outcome is between 0 an 1.
+    The sum of all possibility = 1.
+
+    \section*{Probability of an event}
+    The probability of an event A, denoted by P(A), is obtained by adding the probability of 
+    the individual outcomes in an event.
+    \begin{itemize}
+        \item  $0\leq P(A) \leq 1$
+        \item P(A) = 1 implies A always occurs
+        \item P(A) = 0 implies A never occurs
+    \end{itemize}
+    When all possible outcomes are equally likely,
+        \begin{equation*}
+            P(A) = \frac{\text{\# of outcomes in A}}{\text{\# of outcomes in sample space}}
+        \end{equation*}
+
+    \section*{Set Theory for Event using Venn Diagram}
+    \subsection*{Complement of an Event}
+        \begin{equation*}
+            P(A^{c}) + P(A) = 1
+        \end{equation*}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10cm]{figures/complement.PNG}
+            \caption{Complement of an event}
+            \label{fig:complement}
+        \end{figure}
+
+    \subsection*{Intersection of 2 Events}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10cm]{figures/intersection.PNG}
+            \caption{Intersection of 2 Events}
+            \label{fig:intersection}
+        \end{figure}
+
+    \subsection*{Disjoint or Mutually Exclusive Event}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10cm]{figures/disjoint.PNG}
+            \caption{Disjoint Event}
+            \label{fig:disjoint}
+        \end{figure}
+   
+    \subsection*{Union of 2 Events}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10cm]{figures/union.PNG}
+            \caption{Union of 2 Events}
+            \label{fig:union}
+        \end{figure}
+ 
+
+    \subsection*{Property of Probability}
+    \begin{align*}
+        P(A\cup B) = P(A) + P(B) - P(A\cap B)\\
+        P(A\cup B) = P(A) + P(B) \text{ if A and B are disjoint}\\
+    \end{align*}
+
+    \section*{Conditional Probability}
+    Conditional probability is used to determine how 2 events are related. 
+    \begin{align*}
+        &P(A|B) = \frac{P(A\cap B)}{P(B)}\\
+        &P(A\cap B) = P(B) \cdot P(A|B)\\
+        &P(B|A) = \frac{P(A\cap B)}{P(A)}\\
+        &P(A\cap B) = P(A) \cdot P(B|A)
+    \end{align*}
+
+    \section*{Independent Event}
+    Event A and Event B are independent if knowing one event occurs does not change the probability of 
+    the other.
+    \begin{align*}
+        P(A|B) = P(A)\\
+        P(B|A) = P(B)\\
+        P(A\cap B) = P(A)P(B) \text{ if A and B are independent}
+    \end{align*}
+
+    If A and B are independent, $A^{c}$ and $B$, $A$ and $B^{c}$, $A^{c}$ and $B^{c}$ are also 
+    independent.
+
+    \section*{Tree Diagram}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10cm]{figures/tree.PNG}
+            \caption{Tree Diagram}
+            \label{fig:tree}
+        \end{figure}
+   
+    \section{Random Variable}
+    A random variable X is a function defined on the sample space S, assigning a number $x = X(\omega)$ to each outcome $\omega$ 
+    in the sample space. Random variables are  defined by upper case letters such as X, Y, Z... Lower case values x, y, z represents a possible value of the 
+    random variable
+
+    \section*{Types of Random Variable}
+    \begin{itemize}
+        \item Discrete
+        \item Continuous
+    \end{itemize}
+
+    Note
+    \begin{itemize}
+        \item For a continuous random variable X, $P(X = c) = 0$ for any c.
+        \item Any random variable whose possible values are either 1 or 0 is called Bernoulli's Random Variable
+    \end{itemize}
+
+    \section*{Discrete Random Variable}
+    \subsection*{Probability Mass Function (pmf)}
+        \begin{equation*}
+            f(x)= P(X=x)\\
+        \end{equation*}
+        where f(x) gives the probability of each possible value x of X. It has the following properties.
+
+        \begin{align*}
+            f(x) \geq 0 \text{ for all x}\\
+            \sum f(x) =1
+        \end{align*}
+
+    \subsection*{Cumulative Distribution Function (cdf)}
+        \begin{equation*}
+            F(x) = P(X \leq x) = \sum_{d\leq x} f(k) \text{ for all real x}
+        \end{equation*}
+    \subsection*{Mean and Variance of a Discrete Random Variable}
+        Mean(Expected Value) of a discrete random variable with pmf f(x) is 
+        \begin{equation*}
+            \mu = R[X] = \sum x f(x)
+        \end{equation*}
+        Variance of a discrete random variable is 
+        \begin{align*}
+            \sigma^{2} = Var(X) = E[(x-\mu)^{2}]\\
+            Var(X) = E[x^{2}] - E[x] ^{2}
+        \end{align*}
+
+        The expected value of some function g(x) corresponding to the random variable X with pmf f(x) is 
+        \begin{equation*}
+            E[g(x)] = \sum g(x)f(x)
+        \end{equation*}
+
+    \section*{Continuous Random Variable}
+    \subsection*{Probability Density Function}
+    Let X be a continuous random variable, then the probability density function of X is a function f(x) such 
+    that for any 2 numbers a and b and $a < b$.
+    \begin{align*}
+        &P(a \leq x \leq b) = \int_{a}^{b} f(x) dx\\
+        &f(x) \geq 0\\
+        &\int_{- \infty}^{\infty} f(x) dx = 1
+    \end{align*}
+
+    \subsection*{Cumulative Distribution Function}
+    \begin{align*}
+        &F(x) = P(X \leq x) = \int_{-infty}^{x}f(t)dt \text{ for all x}\\
+        &P(X > a) = 1 - F(a)\\
+        &P(a < X < b) = F(b) - F(a)
+    \end{align*}
+    \subsection*{Mean and Variance of Continuous Random Variable}
+    Mean of f(x) is 
+    \begin{align*}
+        &\mu = E[X] = \int_{-\infty}^{\infty} x f(x) dx\\
+        &E[g(x)] = \int_{-\infty}^{\infty} g(x) f(x) dx
+    \end{align*}
+    Variance is 
+    \begin{align*}
+        \sigma^{2} &= Var(X) = E[(x - E[x])^{2}] = E[(x - \mu)^{2}]\\
+        & = \int_{-\infty}^{\infty} (x-\mu)^{2} f(x) dx
+    \end{align*}
+
+    \subsection*{Properties of Mean and Variance}
+    \begin{enumerate}
+        \item $E(aX+b) = aE(x) + b$
+        \item $E(X+Y) = E(X) + E(Y)$
+        \item $E(XY) = E(X)E(Y) \text{ if X and Y are independent}$
+        \item $Var(aX + b) = a^{2} Var(X)$
+        \item $Var(X+Y) = VAR(X)+ VAR(Y) \text{ if X and Y are independent}$
+        \item $Var(X_Y) = VAR(X) - VAR(Y) \text{ if X and Y are independent}$
+    \end{enumerate}
+
+    \section*{Some Continuous Random Variable Model}
+    \subsection*{Uniform Distribution}
+    If X is a uniform random variable, $X\sim U(a, b)$, X is evenly distributed on the interval [a,b].
+    \begin{align*}
+        &pdf = f(x) = \frac{1}{b-a}\\
+        &\mu = E[X] = \frac{a+b}{2}\\
+        &\sigma^{2} = \frac{(b-a)^{2}}{12}
+    \end{align*}
+    \subsection*{Exponential Distribution}
+    Exponential random variables are often used to model the time until an event occur. A random variable $X exp(\lambda)$ has,
+    \begin{align*}
+        &pdf = f(x) = \lambda e^{-\lambda x}; x \geq 0 ; \lambda > 0\\
+        &\mu = E[X] = \frac{1}{\lambda}\\
+        &\sigma^{2} = \frac{1}{\lambda^{2}}
+    \end{align*}
+    where $\lambda$ is called the rate.
+    
+    \section*{Sum and Average of Independent Random Variable} 
+        Let $X_{1}, X_{2}, X_{3}... X_{n}$ be n independent random variables. 
+        $Y = a_{1}X_{1} + a_{2}X_{2}...a_{n}X_{n}$. \newline
+
+    \begin{align*}
+       &E[Y] = a_{1}E[X_{1}] + a_{2}E[X_{2}]...a_{n}E[X_{n}]\\
+       &Var[Y] = a_{1}^{2}Var[X_{1}] + a_{2}^{2}Var[X_{2}]...+ a_{n}^{2}Var[X_{n}]
+    \end{align*}
+
+    If all a are 1, then 
+    \begin{equation*}
+        \bar{X} = (X_{1} + ... X_{n}) / n\\
+    \end{equation*}
+
+    \section*{Max and Min of Independent Random Variables}
+    The maximum(V) and the minimum($\wedge$) of a sequence of n independent random variables can be used to 
+    model a number of random quantities.
+
+    \subsection*{Maximum}
+    \begin{equation*}
+        V = max\{X_{1}, X_{2},...X_{n}\}
+    \end{equation*}
+    V can be used to model
+    \begin{enumerate}
+        \item The lifetime of a system of n components connected in parallel
+        \item The completion time of a project made up of n subprojects which can be pursued simultaneously
+        \item The maximum flood level of a river in the next n years
+    \end{enumerate}
+
+    \begin{align*}
+        F_{V}(v) = P(V \leq v) &= P(X_{1}\leq v, X_{2} \leq v \dots X_{n} \leq v )\\
+        &= F_{1}(v)F_{2}(v)...F_{n}(v)
+    \end{align*}
+        where $P(x_{i}\leq v)  = F_{i}(v)$
+    
+    \subsection*{Minimum}
+    \begin{equation*}
+        \wedge = min\{X_{1}, X_{2},...X_{n}\}
+    \end{equation*}
+    $\wedge$ can be used to model
+    \begin{enumerate}
+        \item The lifetime of a system of n components connected in series
+        \item The completion time of a project independently pursued by n competing teams
+        \item The minimum flood level of a river in the next n years
+    \end{enumerate}
+
+    \begin{align*}
+            F_{\wedge}(u) = P(\wedge \leq v) &= 1 - P(\wedge > u) = 1- P(X_{1}\geq u, X_{2} \geq u \dots X_{n} \geq u )\\
+        &= 1- ((1-F_{1}(u))(1-F_{2}(u))...(1-F_{n}(u))
+    \end{align*}
+    
+    \section{Normal Distribution}
+        \section*{Standard Normal}
+    When $a = 1/\sigma$ and $b = -\mu / \sigma$, 
+    \begin{align*}
+            &Z = \frac{x-\mu}{\sigma}\\
+            &\mu = 0\\
+            &\sigma^{2} = 1
+    \end{align*}
+
+    The standard normal density is denoted by $\phi$, the standard normal distribution is denoted by $\Phi$.
+    \begin{align*}
+            &\phi(z) = \frac{1}{2\pi} e^{\frac{-z^{2}}{2}}\\
+            &\Phi(z) = \int_{-\infty}^{z} \frac{1}{2 \pi } e^{\frac{-t^{2}}{2}} dt\\
+            &\Phi(-z) = 1 - \Phi (Z)
+    \end{align*}
+
+    Normal density cannot be integrated in close form, therefore tables are used. 
+    \begin{equation*}
+        F(x) = P(X \leq x) = P(z < \frac{x-\mu}{\sigma}) = \Phi(\frac{x-\mu}{\sigma})
+    \end{equation*}
+    \section*{The 68-95-99.7 Rule}
+    In the normal distribution with mean $\mu$ and standard deviation $\sigma$,
+    \begin{itemize}
+        \item approximately 68\% of observation falls within $\sigma$ of $\mu$
+        \item approximately 95\% of observation falls within $2\sigma$ of $\mu$
+        \item approximately 99.7\% of observation falls within $3\sigma$ of $\mu$
+    \end{itemize}
+    
+    \section*{Properties of normal distribution}
+    \begin{enumerate}
+        \item If $X\sim N(\mu, \sigma^{2})$ and $Y = aX+b$ then $Y\sim N(a\mu+b, a^{2}\sigma^{2})$.
+        \item Suppose $X_{1} \dots X_{n}$ are independent normal random variables. $X_{i} \sim N(\mu_{i}, \sigma_{i}^{2})$, 
+                    If Y is a linear combination of X, then $Y\sim N(a_{1}\mu_{1}+...a_{n}\mu_{n}, a_{1}^{2}\sigma_{1}^{2}+\dots a_{n}^{2}\sigma_{n}^{2})$.
+            \item If $X_{1} \dots X_{n}$  are independent, identically distributed random variable with mean $\mu$ and std $\sigma$.Then 
+                    $\bar{X} = N(\mu, \sigma^{2} / n)$. Where $\bar{X}$ is a linear combination of all X.
+    \end{enumerate}
+
+    \section*{Some Probability Model}
+    \subsection*{Bernoulli's Ditribution}
+        Bernoulli's random variable is a random variable that takes value of 1 in case of success and 0 in case of failure.
+        \begin{align*}
+            &X(success) = 1\\
+            &X(failure) = 0
+        \end{align*}
+        \begin{align*}
+           &X\sim Bernoulli(P) \\
+           &P(X = x) = P^{x}(1-P)^{1-p}; x = 0, 1 \dots\\
+        \end{align*}
+        where p is the probability of success.
+        \begin{align*}
+            &E[X] = P\\
+            &Var[X] = p(1-p)
+        \end{align*}
+        
+
+        
+    \subsection*{Binomial Distribution}
+    A binomial random variable is the number of success for n independent trials.
+    \begin{align*}
+        &X\sim Bin(n, p) \text{ if the discrete random variable X has the pmf}\\
+        &P(X=x) = {n \choose x} p^{x}(1-p)^{n-x};\, x = 1, 2, 3,...n
+    \end{align*}
+    where n is the number of trials and p is the probability of success.
+    \begin{align*}
+        &E[X] = np\\
+        &Var[X] = np(1-p)
+    \end{align*}
+    \subsection*{Motivation for binomial}
+    Consider performing an experiment n times where the probability of success in every trial is p 
+    and the n trials are independent. We are interested in the probability of X successes. The probability 
+    of getting X successes and n-x failures in the specific order is $P^{x}(1-p)^{n-x};\, x = 0, 1, 2, n$. 
+    Since there are ${n \choose x} = \frac{n!}{x!(n-x)!}$ ways the trial outcome can be ordered, $P(x successes) = {n\choose x}p^{x}(1-p)^{n-x}$.
+
+    \subsection*{Poisson's Distribution}
+    Poisson's Distribution expresses the probability of a given number of events occurring in a 
+    fixed interval of time or space if these events occurs with a known constant rate and independently.
+    \begin{align*}
+        &\text{X - the number of occurances in a given inteval or space}\\
+        &X\sim Poisson(\lambda)\\
+        &pmf = P(X=x) = \frac{\lambda^{x}e^{-\lambda}}{x!}\, x = 1, 2, 3, \dots\\
+    \end{align*}
+    where $\lambda$ is the rate of occurrences.
+    \begin{align*}
+       e^{k} = 1 + k + k^{2} / (2!) ... = \sum_{0}^{\infty} \frac{k^{x}}{x!}\\
+       E(X) = Var(X)= \lambda
+    \end{align*}
+
+    Rules
+    \begin{itemize}
+        \item  The probability of an event within a certain interval does not change over other intervals.
+        \item The umber of occurrences of an event in an interval is proportional to the size of the inteval.
+        \item Events cannot happen simultaneously
+    \end{itemize}
+    \subsection*{Poisson's Distribution to estimate binomial}
+    If $X\sim Bin(n, p)$ with large n($n \geq 20$) and small p($np < 5$), then we can use Poisson's random variable with rate 
+    $\lambda = np$ to approximate binomial.
+    \begin{equation*}
+        Bin(n, p) = Poisson(np)
+    \end{equation*}
+   
+    \subsection*{Exponential Random Variable}
+    Let T be the time between two consecutive occurrences of an event. Then T is a continuous rv and it has exponential density.
+    \begin{align*}
+        &T\sim exp(\lambda)\\
+        &f(t) = \lambda e^{-lambda t}\\
+        &F(t) = 1-e^{-\lambda t}
+    \end{align*}
+    T is also the waiting time until the first event.
+
+    \subsection*{Geometric Distribution}
+    A geometric random variable counts the number of independent trials needed until the first success occurs where
+    each trial has a probability of success.
+    \begin{align*}
+        &X\sim Geo(p)\\
+        &f(x) = P(X = x) = P(1-p^{x-1}); \, x = 1, 2, \dots, n\\
+        &F(x) = 1 - (1-p)^{x}; \, x = 1, 2, dots, n
+    \end{align*}
+
+    \begin{align*}
+        &E[X] = \frac{1}{p}\\
+        &Var(X) = \frac{1-p}{p^{2}}
+    \end{align*}
     \section*{Normal Probability Approximations}
     \subsection*{Population and Sample}
     \begin{itemize}
@@ -78,7 +630,6 @@
     with mean $\mu$ and standard deviation $\sigma$. Do this repeatedly and then calculate the mean of each sample. As the sample size
     increases, the distribution of the mean of the drawn samples will approach a normal distribution with mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
 
-
     \begin{equation*}
         \bar{X} = \frac{X_{1}+...X_{n}}{n} \sim N(\mu, \frac{\sigma^{2}}{n})
     \end{equation*}
@@ -126,6 +677,8 @@
         &=(Z\leq 1.12)\\
         &= 0.8686
     \end{align*}
+
+    TODO!!!!!!!!!!!!!
 
     \section*{Normal Approximation to the Binomial Distribution}
     Let $X \sim Bin(n, p)$. When n is large so that both $np\geq 5$, we can use the normal distribution to 
